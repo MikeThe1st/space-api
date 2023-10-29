@@ -28,8 +28,8 @@ var corsOptions = {
 
 app.use(cookieParser())
 app.use(express.json())
-app.use(cors(corsOptions))
-
+// app.use(cors(corsOptions))
+app.use(cors())
 apiApp.use(cors())
 
 
