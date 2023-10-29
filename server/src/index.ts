@@ -26,15 +26,15 @@ var corsOptions = {
   credentials: true,
 }
 
-// app.use(cookieParser())
-// app.use(express.json())
-// app.use(cors(corsOptions))
-// app.use(cors())
+app.use(cookieParser())
+app.use(express.json())
+app.use(cors(corsOptions))
+app.use(cors())
 apiApp.use(cors())
 
 
 
-// app.use('/backend', mainRouter)
+app.use('/backend', mainRouter)
 apiApp.use('/api', apiRouter)
 
 
@@ -51,7 +51,7 @@ const start = async () => {
     .catch((error) => {
       console.error('Error connecting to MongoDB:', error);
     })
-    // app.listen(appPort, () => console.log(`App is running on Port: ${appPort}`))
+    app.listen(appPort, () => console.log(`App is running on Port: ${appPort}`))
     apiApp.listen(apiPort, () => console.log(`Api is running on Port: ${apiPort}`))
   } catch (error) {
       console.log(error)
