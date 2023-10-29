@@ -29,7 +29,7 @@ var corsOptions = {
 
 app.use(cookieParser())
 app.use(express.json())
-app.use(helmet())
+// app.use(helmet())
 app.use(cors(corsOptions))
 
 apiApp.use(cors())
