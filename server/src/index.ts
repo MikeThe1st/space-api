@@ -1,5 +1,4 @@
 import express from 'express'
-import helmet from 'helmet'
 import mongoose from 'mongoose'
 import dotenv from 'dotenv'
 import cors from 'cors'
@@ -29,7 +28,6 @@ var corsOptions = {
 
 app.use(cookieParser())
 app.use(express.json())
-// app.use(helmet())
 app.use(cors(corsOptions))
 
 apiApp.use(cors())
