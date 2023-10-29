@@ -69,11 +69,10 @@ export const userVerification = async (req: Request, res: Response) => {
         const token = req.cookies.token
 
         if (!token) {
-            return res.status(401).json({ error: 'Token not found.', status: false });
+            return res.status(404).json({ error: 'Token not found.', status: false });
         }
 
         const secretKey = process.env.JWT_SECRET;
-
         if (!secretKey) {
             return res.status(500).json({ error: 'JWT secret key is not configured.', status: false });
         }

@@ -23,7 +23,6 @@ export const createCustomerIfNull = async (req: Request, res: Response) => {
         const decoded = jwt.verify(token, secretKey)
         const { username } = decoded
         const loginUser = await User.findOne({ username: username })
-        console.log(loginUser)
         if (!loginUser) {
             return res.status(404).json({ msg: "User not found." })
         }

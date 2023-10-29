@@ -35,7 +35,7 @@ export const asteroidsNearEarth = async (req: Request, res: Response) => {
         }
     } catch (error) {
         console.log(error)
-        return res.status(404).json('Something went wrong.')
+        return res.status(500).json('Something went wrong.')
     }
 }
 
@@ -65,7 +65,7 @@ export const marsPhotos = async (req: Request, res: Response) => {
         }
     } catch (error) {
         console.log(error)
-        return res.status(404).json('Something went wrong.')
+        return res.status(500).json('Something went wrong.')
     }
 }
 
@@ -86,7 +86,7 @@ export const pictureOfTheDay = async (req: Request, res: Response) => {
         }
     } catch (error) {
         console.log(error)
-        return res.status(404).json('Something went wrong.')
+        return res.status(500).json('Something went wrong.')
     }
 }
 
@@ -108,6 +108,6 @@ export const apiMiddleware = async (req: Request, res: Response, next: NextFunct
         
     } catch (error) {
         console.log(error)
-        return res.status(409).json('Access forbidden.')
+        return res.status(500).json('Access forbidden.')
     }
 }

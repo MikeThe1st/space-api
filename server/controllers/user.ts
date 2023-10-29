@@ -119,6 +119,6 @@ export const dashboardUser = async (req: Request, res: Response) => {
         }
         else return res.status(404).json('User not found.')
     } catch (error) {
-        return res.status(404).json(`An error occured: ${error}`)
+        return res.status(500).json(`An error occured: ${error}`)
     }
 }
