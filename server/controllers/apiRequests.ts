@@ -111,3 +111,7 @@ export const apiMiddleware = async (req: Request, res: Response, next: NextFunct
         return res.status(500).json('Access forbidden.')
     }
 }
+
+export const test = async (req: Request, res: Response, next: NextFunction) => {
+    res.json({ message: 'Hello, World!' })
+}
