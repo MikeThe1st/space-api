@@ -112,6 +112,6 @@ export const apiMiddleware = async (req: Request, res: Response, next: NextFunct
     }
 }
 
-export const test = async (req: Request, res: Response, next: NextFunction) => {
+export const testApi = async (req: Request, res: Response, next: NextFunction) => {
     res.json({ message: 'Hello, World!' })
 }
