@@ -1,9 +1,11 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
+const path = import.meta.env.PRODUCTION_BACKEND || "http://localhost:3000/backend"
+
 export const api = createApi({
     reducerPath: 'financeApi',
     tagTypes: ["Signup", "Login", "JsonWebToken", "Payment", "UpdatePlan", "CancelPlan"],
-    baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3000/backend", credentials: "include" }),
+    baseQuery: fetchBaseQuery({ baseUrl: path, credentials: "include" }),
     endpoints: (builder) => ({
         signup: builder.mutation<any, any>({
             query: (data) => ({

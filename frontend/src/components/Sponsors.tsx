@@ -1,8 +1,8 @@
-import amazon from '/public/webp/amazon.webp'
-import americanExpress from '/public/webp/american-express.webp'
-import forbes from '/public/webp/forbes.webp'
-import visa from '/public/webp/visa.webp'
-import vogue from '/public/webp/vogue.webp'
+import amazon from '/webp/amazon.webp'
+import americanExpress from '/webp/american-express.webp'
+import forbes from '/webp/forbes.webp'
+import visa from '/webp/visa.webp'
+import vogue from '/webp/vogue.webp'
 
 const images = [
   amazon,
