@@ -15,7 +15,7 @@ interface IrequestData {
 const requestData: IrequestData[] = [
     {
         title: 'Picture of the day request',
-        url: 'mypath/api/picture-of-the-day?api_key=YOUR_API_KEY',
+        url: 'https://space-api-v1w9.onrender.com/api/picture-of-the-day?api_key=YOUR_API_KEY',
         description: 'Best todays picture or video from space.',
         parameters: [
             {
@@ -29,7 +29,7 @@ const requestData: IrequestData[] = [
     },
     {
         title: 'Near Earth asteroids request',
-        url: 'mypath/api/near-earth-asteroids?api_key=YOUR_API_KEY',
+        url: 'https://space-api-v1w9.onrender.com/api/near-earth-asteroids?api_key=YOUR_API_KEY',
         description: 'Data about asteroids close to earth and whether they might be dangerous or not.',
         parameters: [
             {
@@ -43,7 +43,7 @@ const requestData: IrequestData[] = [
     },
     {
         title: 'Mars Rover Photos',
-        url: 'mypath/api/mars-rover-photos?api_key=YOUR_API_KEY&photos=NUMBER_OF_PHOTOS',
+        url: 'https://space-api-v1w9.onrender.com/api/mars-rover-photos?api_key=YOUR_API_KEY&&photos=NUMBER_OF_PHOTOS',
         description: 'Photos taken by Mars Rover on the Mars planet.',
         parameters: [
             {
@@ -55,7 +55,7 @@ const requestData: IrequestData[] = [
             },
             {
                 param: 'photos',
-                type: 'String',
+                type: 'Number',
                 description: 'Number of photos you want to get from 1 to 100.',
                 default: '1',
                 required: false,

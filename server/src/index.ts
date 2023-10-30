@@ -4,7 +4,6 @@ import dotenv from 'dotenv'
 import cors from 'cors'
 var cookieParser = require('cookie-parser')
 const mainRouter = require('../routes/main.ts')
-const path = require('path')
 
 dotenv.config()
 const app = express()

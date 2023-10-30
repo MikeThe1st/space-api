@@ -17,7 +17,7 @@ const About: React.FC = () => {
         >
           <div className='2xl:w-5/6'>
             <h2 className='header-font text-4xl sm:text-5xl md:text-6xl gradient-text pl-6 pr-6 md:p-2 text-gradient'>What we offer</h2>
-            <div className='font-bold text-md sm:text-xl lg:text-2xl xl:text-3xl m-12'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat lorem a velit dapibus ultrices. Suspendisse venenatis vel mi eget volutpat. Suspendisse faucibus imperdiet leo eget vulputate. Maecenas iaculis mauris vitae ante mollis pellentesque. Vestibulum viverra risus in lectus cursus, sed porttitor tortor maximus. In vel ullamcorper nisl, in sodales diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat lorem a velit dapibus ultrices. Suspendisse venenatis vel mi eget volutpat. Suspendisse faucibus imperdiet leo eget vulputate. </div>
+            <div className='text-lg sm:text-xl lg:text-2xl xl:text-3xl m-12'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat lorem a velit dapibus ultrices. Suspendisse venenatis vel mi eget volutpat. Suspendisse faucibus imperdiet leo eget vulputate. Maecenas iaculis mauris vitae ante mollis pellentesque. Vestibulum viverra risus in lectus cursus, sed porttitor tortor maximus. In vel ullamcorper nisl, in sodales diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat lorem a velit dapibus ultrices. Suspendisse venenatis vel mi eget volutpat. Suspendisse faucibus imperdiet leo eget vulputate. </div>
           </div>
         </motion.div>
       </div>
