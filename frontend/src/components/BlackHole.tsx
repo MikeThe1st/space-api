@@ -45,6 +45,7 @@ const BlackHoleCanvas = () => {
                 position: [-9, (isSuperSmall ? 8 : 0), 7],
             }}
             style={{ background: 'rgba(00, 00, 00, 0.1)' }}
+            className='canvas'
         >
             <Suspense>
                 <OrbitControls

@@ -50,3 +50,7 @@ body {
     background: "linear-gradient(to right, #ad5389, #3c1053)";
     fontSize: "50px";
 }
+
+.canvas {
+    touch-action: auto !important;
+}

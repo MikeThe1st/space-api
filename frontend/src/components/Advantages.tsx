@@ -48,7 +48,7 @@ const AdvantageCart: React.FC<AdvantageAdvantageData> = ({ icon: IconComponent, 
 const Advantages = () => {
     return (
 
-        <section className='flex flex-col justify-center items-center text-center mt-10 sm:mt-28 sm:mb-28 scale-110'>
+        <section className='flex flex-col justify-center items-center text-center m-10 sm:my-28 scale-110'>
             <div className='text-bold text-white font-extrabold text-5xl md:text-6xl m-3 relative'>
                 <motion.div
                         initial="hidden"
