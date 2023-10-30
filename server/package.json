@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "npx nodemon",
     "dev": "npx tsc -w & nodemon",
-    "start": "ts-node ./src/index.ts"
+    "start-backend": "ts-node ./src/index.ts",
+    "start-api": "ts-node ./src/api.ts"
   },
   "keywords": [],
   "author": "",
