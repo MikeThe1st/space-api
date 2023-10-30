@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-
-const path = import.meta.env.PRODUCTION_BACKEND || "http://localhost:3000/backend"
+const production = import.meta.env.PRODUCTION_BACKEND;
+const path = production ? String(production) : "http://localhost:3000/backend"
 
 export const api = createApi({
     reducerPath: 'financeApi',
