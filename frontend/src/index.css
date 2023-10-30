@@ -46,7 +46,7 @@ body {
   background: linear-gradient(to right, #ff9900, #ff66cc);
 }
 
-.sideBarButton: {
+.sideBarButton {
     background: "linear-gradient(to right, #ad5389, #3c1053)";
     fontSize: "50px";
 }
