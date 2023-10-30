@@ -93,12 +93,12 @@ const Navbar: React.FC = () => {
                             <MenuItem key={index} onClick={handleClose} sx={{ width: "100vw", justifyContent: "center" }}>
                                 {link === "About" || link === "Contact" ? (
                                     <Link
-                                        to="#"
+                                        to="/"
                                         onClick={(e) => {
-                                            e.preventDefault();
-                                            const aboutSection = document.getElementById('about');
-                                            if (aboutSection) {
-                                                aboutSection.scrollIntoView({ behavior: 'smooth' });
+                                            e.preventDefault()
+                                            const section = document.getElementById(link.toLowerCase())
+                                            if (section) {
+                                                section.scrollIntoView({ behavior: 'smooth' })
                                             }
                                         }}
                                         className="text-white text-bold w-3/4 h-[8vh] flex justify-center items-center text-xl border-2 rounded-md"
@@ -106,7 +106,7 @@ const Navbar: React.FC = () => {
                                         {link}
                                     </Link>
                                 ) : (
-                                    <Link to={`${link.toLowerCase().replace(" ", "")}`}>{link}</Link>
+                                    <Link to={`/${link.toLowerCase().replace(" ", "")}`} className="text-white text-bold w-3/4 h-[8vh] flex justify-center items-center text-xl border-2 rounded-md">{link}</Link>
                                 )}
                             </MenuItem>
                         ))}
