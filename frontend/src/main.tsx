@@ -10,7 +10,7 @@ const store = configureStore({
   reducer: {
     [api.reducerPath]: api.reducer,
   },
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(api.middleware)
+  middleware: getDefaultMiddleware().concat(api.middleware)
 })
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

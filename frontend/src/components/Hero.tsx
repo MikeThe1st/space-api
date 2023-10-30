@@ -1,4 +1,4 @@
-import heroImg from '../assets/lines.webp'
+import heroImg from '../../public/webp/lines.webp'
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { textVariant } from '../utils/motion';

@@ -1,4 +1,4 @@
-import { useState, ChangeEvent, FormEvent, useEffect } from 'react';
+import { useState, ChangeEvent, FormEvent } from 'react';
 import { useSignupMutation, useLoginMutation } from '../state/api';
 import { useLocation, useNavigate } from 'react-router-dom'
 import { Alert } from '@mui/material'
