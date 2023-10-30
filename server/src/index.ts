@@ -10,8 +10,9 @@ const app = express()
 const appPort = process.env.APP_PORT || 3000
 const mongoURL = process.env.MONGO_URL
 
+const env = process.env.NODE_ENV
 const corsOptions = {
-  origin: ['https://space-api-app.onrender.com', 'http://localhost:5173'],
+  origin: env === 'dev' ? 'http://localhost:5173' : 'https://space-api-app.onrender.com',
   methods: 'GET,POST,DELETE,PUT,PATCH,OPTIONS',
   credentials: true,
 }

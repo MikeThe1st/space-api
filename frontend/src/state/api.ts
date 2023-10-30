@@ -1,11 +1,11 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-const production = import.meta.env.PRODUCTION_BACKEND;
-const path = production ? String(production) : "http://localhost:3000/backend"
+// const production = import.meta.env.PRODUCTION_BACKEND;
+// const path = production ? String(production) : "http://localhost:3000/backend"
 
 export const api = createApi({
     reducerPath: 'financeApi',
     tagTypes: ["Signup", "Login", "JsonWebToken", "Payment", "UpdatePlan", "CancelPlan"],
-    baseQuery: fetchBaseQuery({ baseUrl: path, credentials: "include" }),
+    baseQuery: fetchBaseQuery({ baseUrl: 'https://space-api-backend.onrender.com/backend', credentials: "include" }),
     endpoints: (builder) => ({
         signup: builder.mutation<any, any>({
             query: (data) => ({
