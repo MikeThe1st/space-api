@@ -52,7 +52,7 @@ export const login = async (req: Request, res: Response) => {
             const secretKey = process.env.JWT_SECRET
             const expiresIn = '1d'
             const token = await jwt.sign(payload, secretKey, {expiresIn})
-            res.cookie("token", token, {httpOnly: false})
+            res.cookie("token", token, {httpOnly: false, secure: true, domain: 'https://space-api-app.onrender.com'})
             return res.status(200).json({ token, msg: 'Login success.' })
         }
         else {
