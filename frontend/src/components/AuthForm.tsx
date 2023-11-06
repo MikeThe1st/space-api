@@ -72,7 +72,7 @@ const AuthForm: React.FC = () => {
             </div>
             
             ) : (<></>)}
-            <div className='flex items-center flex-col p-6 w-3/4 md:w-1/2 lg:w-1/3 bg-gray-700 rounded-3xl h-fit md:mt-16 shadows-2xl' style={{ boxShadow: '0px 0px 60px 25px rgba(128, 50, 220, 0.5)' }}>
+            <div className={`flex items-center flex-col p-6 w-3/4 md:w-1/2 lg:w-1/3 bg-gray-700 rounded-3xl h-fit md:mt-16 shadows-2xl ${pathname === "signup" ? 'mt-[18vh] sm:mt-[16vh] md:mt-[12vh]' : ''}`} style={{ boxShadow: '0px 0px 60px 25px rgba(128, 50, 220, 0.5)' }}>
                 <h2 className='text-black text-4xl sm:text-5xl md:text-6xl m-4 font-black text-gradient xl:p-2'>{pathname == "signup" ? "Sign Up" : "Login"}</h2>
                 <form onSubmit={handleSubmitForm} className='flex flex-col w-full px-4 py-10 shadow-xl rounded-xl'>
                     <div className='flex flex-col mt-3'>

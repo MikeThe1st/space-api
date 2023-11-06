@@ -44,7 +44,7 @@ const requestData: IrequestData[] = [
     {
         title: 'Mars Rover Photos',
         url: 'https://space-api-v1w9.onrender.com/api/mars-rover-photos?api_key=YOUR_API_KEY&&photos=NUMBER_OF_PHOTOS',
-        description: 'Photos taken by Mars Rover on the Mars planet.',
+        description: 'Photos taken by Mars Rover on the Mars.',
         parameters: [
             {
                 param: 'api_key',

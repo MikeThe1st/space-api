@@ -19,7 +19,9 @@ const UserDashboard = () => {
     return <div>Error loading user data or no data available.</div>;
   }
 
-  const usage = Number(Number(userData?.subscription.usage) / Number(userData?.subscription.limit) * 100).toFixed(2)
+  const usage = userData?.subscription?.usage && userData?.subscription?.limit
+  ? (Number(userData.subscription.usage) / Number(userData.subscription.limit) * 100).toFixed(2)
+  : 'Not available'
 
   const cancelUserPlan = async () => {
     const result = await cancelPlan({})
@@ -80,9 +82,9 @@ const UserDashboard = () => {
               <div className='pt-16 mx-4 sm:mx-10 font-bold'>SUBSCRIPTION USAGE THIS MONTH:</div>
               <div className='py-4 sm:py-10 mx-4 sm:mx-10'>
                 <div className='w-full md:w-3/4 mx-auto'>
-                  <div className='text-center'>{`${usage}%` || "Loading..."}</div>
+                  <div className='text-center'>{`${usage || 0}%` || "Loading..."}</div>
                   <div className="bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                    <div className="bg-purple-700 h-2.5 rounded-full" style={{ width: `${usage}%` }}></div>
+                    <div className="bg-purple-700 h-2.5 rounded-full" style={{ width: `${usage || 0}%` }}></div>
                   </div>
                 </div>
               </div>

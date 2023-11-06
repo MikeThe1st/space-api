@@ -25,7 +25,7 @@ const Sponsors: React.FC = () => {
             className="bg-white items-center flex sm:p-3 p-1 border border-blue-400 sm:rounded-2xl rounded-lg sponsor-shadow scale-110"
           >
             <img
-              alt={`Brand ${index}`}
+              alt={`Brand ${image.toLocaleLowerCase()}`}
               src={image}
               className='object-contain h-12 w-20 sm:w-34 sm:h-22'
             />
